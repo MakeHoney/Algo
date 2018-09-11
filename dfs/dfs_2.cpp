@@ -34,7 +34,7 @@ int main() {
         for(int i = 1; i <= node; i++) {
             /* 그래프 개수 구할 때 */
             if(!visit[i]) cnt++;
-            dfs(i);
+            dfs(i); // <- if안에 넣기
         }
         for(int i = 1; i <= node; i++) {
             graph[i].clear();
